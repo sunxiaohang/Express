@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdddddd"
+    android:orientation="vertical"
+    tools:context=".FocuseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffcd4040"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/focuseback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffcd4040"
+            android:text="Back"
+            android:textColor="#ff000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#ff333333"
+                android:text="图灵机器人" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chatmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="#ffffffff">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffcd4040"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/inputtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ff000000"
+            android:textColorHint="#cc777777"
+            android:hint="Input Something" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_margin="5dp"
+            android:background="#ff4DB6AC"
+            android:text="Submit"
+            android:textColor="#ddffffff" />
+    </LinearLayout>
+</LinearLayout>

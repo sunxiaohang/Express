@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:background="#ffffffff"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="#ffcd4040">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dp"
+			android:text="艾美日历"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="right">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:id="@+id/btn_calendermenu"
+			android:background="#ffcd4040"
+			android:text="menu"
+			android:gravity="center"/>
+			</LinearLayout>
+
+	</LinearLayout>
+	
+	<com.example.m1320.express.BorderText
+	    android:layout_width="fill_parent" 
+	    android:layout_height="38dp"
+        android:gravity="center"
+        android:id="@+id/toptext"
+        android:textSize="15sp"
+		android:textColor="#aa000000"
+        android:drawableLeft="@drawable/previous_year"
+        android:drawableRight="@drawable/next_year"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp" />
+
+	<ViewFlipper
+	    android:id="@+id/flipper"
+	    android:layout_width="match_parent"
+	    android:layout_height="365dp" />
+
+</LinearLayout>

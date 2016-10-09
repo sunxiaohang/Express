@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.m1320.express">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Guide"></activity>
+        <activity android:name=".TopNewsMainActivity"/>
+        <activity android:name=".JoyActivity"/>
+        <activity android:name=".ExpressActivity"></activity>
+        <activity android:name=".FocuseActivity"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".NewsContent"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".CalendarConvert"/>
+        <activity android:name=".ScheduleView"/>
+        <activity android:name=".ScheduleAll"/>
+        <activity android:name=".ScheduleInfoView"/>
+        <activity android:name=".ScheduleTypeView"/>
+        <activity android:name=".PanlewarActivity"/>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

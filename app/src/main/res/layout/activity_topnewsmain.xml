@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TopNewsMainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleViewTop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffffff">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/mainlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffffff"
+            android:dividerHeight="10dp"
+            ptr:ptrDrawable="@mipmap/ic_launcher"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:paddingTop="10dp"
+        android:background="#ff2d71b7">
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff2d71b7"
+            android:scaleType="fitXY"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff2d71b7"
+            android:scaleType="fitXY"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/personal" />
+
+        <ImageButton
+            android:id="@+id/focuse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff2d71b7"
+            android:scaleType="fitXY"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/message" />
+
+        <ImageButton
+            android:id="@+id/personal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff2d71b7"
+            android:scaleType="fitXY"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffdddddd"
+    android:orientation="vertical"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.m1320.express.JoyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffcd4040"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/joyback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#ffcd4040"
+            android:text="Back"
+            android:textColor="#ff000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#ff333333"
+                android:text="内涵笑话" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/jokslistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:divider="#ffdddddd"
+        android:dividerHeight="20dp"
+        ptr:ptrDrawable="@mipmap/ic_launcher">
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>
+</LinearLayout>

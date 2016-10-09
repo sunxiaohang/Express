@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.m1320.express.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffcd4040"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/topnews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="今日头条"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/express"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="快递查询"
+            android:textColor="#aa263137" />
+
+        <TextView
+            android:id="@+id/chatandroid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="图灵聊天"
+            android:textColor="#aa263137" />
+
+        <TextView
+            android:id="@+id/joke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="笑话大全"
+            android:textColor="#aa263137" />
+
+        <TextView
+            android:id="@+id/fightplane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="飞机大战"
+            android:textColor="#aa263137" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="艾美日历"
+            android:textColor="#aa263137" />
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/appviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffffff">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_about"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="100dp"
+        android:src="@android:drawable/stat_notify_chat" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

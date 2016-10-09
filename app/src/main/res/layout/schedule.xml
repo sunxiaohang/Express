@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="@drawable/button_shape_3"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <com.example.m1320.express.BorderTextView
+      android:id="@+id/scheduleTop"
+	  android:gravity="center"
+	  android:layout_width="fill_parent"
+	  android:layout_height="40dp"
+	  android:background="@drawable/button_shape_1"
+	  android:textStyle="bold"
+	  android:clickable="true"
+	  android:textColor="#000000"
+	  android:text="编辑日程"/>
+  
+  <com.example.m1320.express.BorderTextView
+      android:id="@+id/scheduleType"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:clickable="true"
+      android:drawableRight="@drawable/schedule_type"
+      android:gravity="center_vertical"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:textColor="#000000"
+      android:textSize="20dp"
+      android:textStyle="bold" />
+
+  <com.example.m1320.express.BorderTextView
+      android:id="@+id/scheduleDate"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:clickable="true"
+      android:gravity="center_vertical"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:textColor="#000000"
+      android:textSize="20dp"
+      android:textStyle="bold" />
+<com.example.m1320.express.BorderEditText
+      android:id="@+id/scheduleText"
+      android:layout_width="match_parent"
+      android:layout_height="226dp"
+      android:layout_marginTop="5dp"
+      android:background="@null"
+      android:gravity="top"
+      android:hint="请输入你的日程..."
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:textColor="#000000" />
+
+  <com.example.m1320.express.BorderTextView
+      android:id="@+id/save"
+      android:layout_width="fill_parent"
+      android:layout_height="45dp"
+      android:layout_marginTop="5dp"
+      android:background="@drawable/button_shape_4"
+      android:clickable="true"
+      android:gravity="center"
+      android:text="保存"
+      android:textColor="#000000"
+      android:textSize="30dp"
+      android:textStyle="bold" />
+
+  <!--<Button
+      android:id="@+id/save"
+      android:gravity="center"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="SAVE"
+      
+  />
+--></LinearLayout>
